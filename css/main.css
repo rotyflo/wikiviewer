@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+  position: fixed;
+  width: 100%;
+  background-color: #42a5f5;
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+#query {
+  border: solid #eee 1px;
+  padding: 4px 16px;
+  animation-name: queryDown;
+  animation-duration: 0.1s;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#query:hover, #query:focus {
+  animation-name: queryUp;
+  animation-duration: 0.1s;
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes queryUp {
+  from {box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);}
+  to {box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.2);}
+}
+
+@keyframes queryDown {
+  from {box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.2);}
+  to {box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);}
+}
+
+#random-page {
+  text-decoration: none;
+  color: #F57C00;
+  outline: none;
+}
+
+#results {
+  padding: 10px;
+}
+
+.card {
+  max-width: 700px;
+  margin: 16px auto;
+  padding: 4px 16px;
+  color: black;
+  text-decoration: none;
+  border: solid #eee 1px;
+  display: block; /* To properly wrap around div */
+  outline: none; /* Hide dotted line after click */
+  animation-name: cardDown;
+  animation-duration: 0.25s;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  animation-name: cardUp;
+  animation-duration: 0.25s;
+  box-shadow: 0 8px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes cardUp {
+  from {box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);}
+  to {box-shadow: 0 8px 8px 1px rgba(0, 0, 0, 0.2);}
+}
+
+@keyframes cardDown {
+  from {box-shadow: 0 8px 8px 1px rgba(0, 0, 0, 0.2);}
+  to {box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);}
+}
