@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Wikipedia Viewer</title>
+  <title>wiki viewer</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
+  <link rel="stylesheet" href="https://unpkg.com/pyloncss@latest/css/pylon.css"/>
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/jquery-3.2.1.min.js" defer></script>
@@ -20,7 +21,10 @@
   </header>
 
   <main>
-    <input id="query" type="text" placeholder="search">
+    <hstack spacing=s>
+      <input id="query" type="text" placeholder="search">
+      <button type="submit">submit</button>
+    </hstack>
 
     <div id="results"></div>
   </main>

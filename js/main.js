@@ -7,6 +7,10 @@ $("#query").on("keydown", function(input) {
   }
 });
 
+$("button").on("click", function() {
+  searchWiki($("#query").val());
+});
+
 function searchWiki(query) {
   let url = `https://en.wikipedia.org/w/api.php?callback=?&action=query&format=json&explaintext&prop=extracts&generator=search&exsentences=1&exintro=1&gsrsearch=${query}`;
 
@@ -30,6 +34,6 @@ function searchWiki(query) {
       `;
     }
 
-    $("#results").html(cards);
+    return $("#results").html(cards);
   });
 }
