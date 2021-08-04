@@ -22,10 +22,11 @@ function searchWiki(query) {
       let pageid = keys[i];
 
       cards += `
-      <a class="card" target="_blank" href="https://en.wikipedia.org/?curid=${pageid}">  
-        <h3>${title}</h3>
-        <p>${extract}</p>
-      </a>
+      <p>
+        <a target="_blank" href="https://en.wikipedia.org/?curid=${pageid}">${title}</a>
+        <br>
+        ${extract}
+      </p>
       `;
     }
 

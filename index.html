@@ -7,20 +7,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wikipedia Viewer</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
   <link rel="stylesheet" href="css/main.css">
+
   <script src="js/jquery-3.2.1.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <h1 id="title">Wikipedia Viewer</h1>
+  <header>
+    <p><b>wiki viewer</b></p>
+  </header>
 
-  <br><br><br><br>
-  <input id="query" type="text" placeholder="Search">
+  <main>
+    <input id="query" type="text" placeholder="search">
 
-  <p><a id="random-page" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Visit Random Page</a></p>
+    <div id="results"></div>
+  </main>
 
-  <div id="results"></div>
+  <footer>
+    <a id="random-page" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+      random page
+    </a>
+  </footer>
+
 </body>
 
 </html>
