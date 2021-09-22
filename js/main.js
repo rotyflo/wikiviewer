@@ -1,4 +1,5 @@
 $("#query").val("");  // Clear query on refresh
+getRandomWiki();
 
 $("#query").on("keydown", function (input) {
   // if 'enter' is pressed
