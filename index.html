@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>wiki viewer</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
   <link rel="stylesheet" href="https://unpkg.com/pyloncss@latest/css/pylon.css"/>
   <link rel="stylesheet" href="css/main.css">
 
@@ -15,18 +14,19 @@
   <script src="js/main.js" defer></script>
 </head>
 
-<body>
+<body class="container">
   <header>
-    <p><b>wiki viewer</b></p>
+    <h1>wiki viewer</h1>
   </header>
 
   <main>
     <hstack spacing=s>
       <input id="query" type="text" placeholder="search">
-      <button type="button" id="submit">submit</button>
-      <button type="button" id="random">random</button>
+      <button type="button" id="submit" class="btn btn-primary">submit</button>
+      <button type="button" id="random" class="btn btn-default">random</button>
     </hstack>
 
+    <br>
     <div id="results"></div>
   </main>
 </body>
