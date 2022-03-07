@@ -1,1 +1,20 @@
-@import url("https://rotyflo.github.io/css/terminal.css");
+@import "https://rotyflo.github.io/css/theme.css";
+
+.btn {
+    float: right;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0;
+}
+
+#query {
+    margin: 0;
+}
+
+#results {
+    padding-top: 2rem;
+}
+
+#search-tools {
+    display: flex;
+    border: 1px solid var(--font-color);
+}
