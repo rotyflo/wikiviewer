@@ -1,13 +1,17 @@
 @import "https://rotyflo.github.io/css/theme.css";
 
 .btn {
-    float: right;
     padding: 0.5rem 1rem 0.5rem 1rem;
     margin: 0;
 }
 
+.btn:hover {
+    border: 1px solid var(--font-color) !important;
+}
+
 #query {
     margin: 0;
+    border-right: none;
 }
 
 #results {
@@ -17,4 +21,19 @@
 #search-tools {
     display: flex;
     border: 1px solid var(--font-color);
+}
+
+#clear {
+    border: 1px solid var(--font-color);
+    border-left: none;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    margin: 0;
+    padding-right: 12px;
+    font-size: 24px;
+}
+
+#clear:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
 }

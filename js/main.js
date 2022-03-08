@@ -1,25 +1,21 @@
 $("#query").val("");  // Clear query on refresh
 getRandomWiki();
 
-$("#query").on("keydown", function (input) {
+$("#query").on("keydown", input => {
   // if 'enter' is pressed
   if (input.keyCode === 13) {
     searchWiki($("#query").val());
   }
 });
 
-$("#submit").on("click", function () {
-  searchWiki($("#query").val());
-});
-
-$("#random").on("click", function () {
-  getRandomWiki();
-});
+$("#submit").on("click", () => searchWiki( $("#query").val() ));
+$("#random").on("click", () => getRandomWiki());
+$("#clear").on("click", () => $("#query").val(""));
 
 function searchWiki(query) {
   let url = `https://en.wikipedia.org/w/api.php?callback=?&action=query&format=json&explaintext&prop=extracts&generator=search&exsentences=1&exintro=1&gsrsearch=${query}`;
 
-  $.getJSON(url, function (api) {
+  $.getJSON(url, api => {
     let pages = api.query.pages;
     let keys = Object.keys(pages);
     let numberOfResults = Object.keys(api.query.pages).length;
@@ -46,7 +42,7 @@ function searchWiki(query) {
 function getRandomWiki() {
   let url = "https://en.wikipedia.org/api/rest_v1/page/random/summary";
 
-  $.getJSON(url, function (api) {
+  $.getJSON(url, api => {
     let title = api.title;
     let extract = api.extract;
     let pageid = api.pageid;
