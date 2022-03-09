@@ -1,8 +1,16 @@
 @import "https://rotyflo.github.io/css/theme.css";
 
+body {
+    max-width: 35rem !important;
+}
+
 svg {
     height: 1rem;
-    color: #fff;
+    color: var(--font-color);
+}
+
+path {
+    stroke-width: 4rem;
 }
 
 .btn {
