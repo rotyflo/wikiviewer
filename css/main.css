@@ -1,5 +1,10 @@
 @import "https://rotyflo.github.io/css/theme.css";
 
+svg {
+    height: 1rem;
+    color: #fff;
+}
+
 .btn {
     padding: 0.5rem 1rem 0.5rem 1rem;
     margin: 0;
