@@ -6,6 +6,7 @@ body {
 
 #search-tools {
 	display: flex;
+	border: 1px solid var(--font-color);
 }
 
 #query,
