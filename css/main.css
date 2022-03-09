@@ -1,52 +1,53 @@
 @import "https://rotyflo.github.io/css/theme.css";
 
 body {
-    max-width: 35rem !important;
-}
-
-svg {
-    height: 1rem;
-    color: var(--font-color);
-}
-
-path {
-    stroke-width: 4rem;
-}
-
-.btn {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 0;
-}
-
-.btn:hover {
-    border: 1px solid var(--font-color) !important;
-}
-
-#query {
-    margin: 0;
-    border-right: none;
-}
-
-#results {
-    padding-top: 2rem;
+	max-width: 35rem !important;
 }
 
 #search-tools {
-    display: flex;
-    border: 1px solid var(--font-color);
+	display: flex;
+}
+
+#query,
+button,
+button:hover {
+	color: var(--font-color);
+	background-color: var(--background-color);
+	border: 1px solid var(--font-color) !important;
+	padding: 0.25rem 1rem 0.25rem 1rem !important;
+	margin: 0;
+}
+
+button:hover,
+button:hover svg {
+	color: var(--secondary-color);
+	cursor: pointer;
+}
+
+#query {
+	border-right: none !important;
 }
 
 #clear {
-    border: 1px solid var(--font-color);
-    border-left: none;
-    background-color: var(--background-color);
-    color: var(--font-color);
-    margin: 0;
-    padding-right: 12px;
-    font-size: 24px;
+	border-left: none !important;
+	padding-left: 0 !important;
+	font-size: 1.5rem;
 }
 
-#clear:hover {
-    color: var(--secondary-color);
-    cursor: pointer;
+#results {
+	padding-top: 2rem;
+}
+
+svg {
+	height: 1rem;
+	color: var(--font-color);
+}
+
+.search-icon {
+	stroke-width: 4rem;
+}
+
+.random-icon {
+	height: 1.1rem;
+	stroke-width: 3rem;
 }
